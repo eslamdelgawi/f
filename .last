@@ -74,7 +74,6 @@ def defense():
                 cek = json.loads(requests.get(url).text)
                 if cek['smtp_check'] == 0:
                     vuln = 8*" " + "\033[32mVuln"
-
                 else:
                     vuln = 5*" " + "\033[31mNot Vuln"
                 lean = 30 - (len(z['email']))
